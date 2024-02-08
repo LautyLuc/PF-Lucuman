@@ -15,14 +15,24 @@
         <header>
             <nav class="menu-container">
                     <div class="menu">
-                        <ul class="navbar">
+                        <div id="toggle-menu" class="toggle-menu">
+                            <label for="toggle-menu-checkbox">
+                                <img src="/proyectoCoder/images/list.svg" alt="menu">
+                            </label>
+                        </div>
+                        <input 
+                        type="checkbox" 
+                        class="toggle-menu__checkbox" 
+                        id="toggle-menu-checkbox">
+                        <ul id="main-menu" class="navbar">
                             <a href="../index.html"><li class="circulo-provisiorio"></li></a>
-                            <li class="us" ><a href="nosotros.html">SOBRE NOSOTROS</a></li>
-                            <li class="planes" ><a href="planes.html">PLANES</a></li>
-                            <li class="supl" ><a href="suplementos.html">SUPLEMENTOS</a></li>
-                            <li class="contact" ><a href="contact.html">CONTACTO</a></li>
+                            <li class="us" ><a href="/proyectoCoder/pages/nosotros.html" class="text-decoration-none">SOBRE NOSOTROS</a></li>
+                            <li class="planes" ><a href="/proyectoCoder/pages/planes.html" class="text-decoration-none">PLANES</a></li>
+                            <li class="supl" ><a href="/proyectoCoder/pages/suplementos.html" class="text-decoration-none">SUPLEMENTOS</a></li>
+                            <li class="contact" ><a href="/proyectoCoder/pages/contact.html" class="text-decoration-none">CONTACTO</a></li>
                         </ul>
-                    </div>
+                    
+                </div>
             </nav>   
     </header>
 

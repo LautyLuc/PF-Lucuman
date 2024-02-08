@@ -17,7 +17,16 @@
     <header>
             <nav class="menu-container">
                     <div class="menu">
-                        <ul class="navbar">
+                        <div id="toggle-menu" class="toggle-menu">
+                            <label for="toggle-menu-checkbox">
+                                <img src="images/list.svg" alt="menu">
+                            </label>
+                        </div>
+                        <input 
+                        type="checkbox" 
+                        class="toggle-menu__checkbox" 
+                        id="toggle-menu-checkbox">
+                        <ul id="main-menu" class="navbar">
                             <a href="index.html"><li class="circulo-provisiorio"></li></a>
                             <li class="us" ><a href="./pages/nosotros.html" class="text-decoration-none">SOBRE NOSOTROS</a></li>
                             <li class="planes" ><a href="./pages/planes.html" class="text-decoration-none">PLANES</a></li>
