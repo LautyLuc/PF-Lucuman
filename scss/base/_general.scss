@@ -1,0 +1,44 @@
+@import './variables';
+
+
+@font-face {
+	font-family: Hs-desarrollo;
+	src: url('hs/HindSiliguri-Regular.ttf') format('truetype');
+	font-size: medium;
+	font-weight: medium;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background-color: map-get($color , bg-uno);
+	height: 100px;
+}
+a {
+	text-decoration: none;
+	color: #fff;
+}
+body {
+	@include gradient-background(#59a3e4,#bdd0db, to left);
+	min-height: 100vh;
+	font-family: $font-family_1;
+}
+footer {
+	background-color: map-get($color, bg-uno );
+	text-align: center;
+	padding: 10px;
+	position: static;
+	top: 90%;
+	bottom: 0;
+	width: 100%;
+}
+@media screen and (max-width: 768px){
+.titulo{
+
+	display: none;
+
+}
+}

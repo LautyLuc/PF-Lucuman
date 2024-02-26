@@ -1,0 +1,16 @@
+@import '../base/mixins';
+
+.suplementos {
+	margin: 20px 0 20px 0;
+}
+.suple {
+	display: flex;
+	margin-bottom: 10px;
+}
+.desc-suple {
+	margin-top: -15px;
+	margin-left: 10px;
+}
+.card {
+    @extend %hover;
+}

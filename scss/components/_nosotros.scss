@@ -1,0 +1,55 @@
+.contenedor-aboutus
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1,auto);
+    .img-aboutUs {
+	width: 90%;
+	margin: 20px 0 0 20px;
+    }
+    .data-aboutUs {
+	display: flex;
+	margin: 20px;
+    }
+}
+.cont-map{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1,auto);
+    .map {
+	margin: 10px 0 20px 20px;
+    width: 90%;
+    }
+    .map-info {
+	display: flex;
+	
+    }
+}
+
+@media screen and (max-width: 768px){
+    .contenedor-aboutus{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(1,auto);
+        
+        .img-aboutUs{
+            display: none;
+        }
+        .data-aboutUs{
+            margin: 20px;
+        }
+    }
+    .cont-map{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(1,auto);
+        
+        .map{
+            margin: 20px;
+        }
+        .map-info{
+            margin: 20px;
+        }
+        
+    }
+}

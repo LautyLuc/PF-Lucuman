@@ -1,0 +1,105 @@
+// config del navbar
+.toggle-menu{
+    display:none;
+}
+.menu-container{
+    padding: 10px 0;
+    
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.menu{
+    width: 100%;
+    display: flex;
+    
+    
+}
+.toggle-menu__checkbox{
+    display: none;
+}
+ul{
+    list-style-type:none;
+    
+    
+}
+.navbar{
+    width: 100%;
+
+    display: flex;
+    
+    justify-content: space-around;
+
+    
+
+}
+.LOGO{
+    border-radius: 10px;
+    margin-bottom: 2%;
+    border: #788896 solid 2px;
+    background-color: lighten($color: #788896, $amount: 20%);
+    
+    
+}
+li{
+    background-color: #788896;
+    margin-bottom: 2%;
+    border:#bbbbbb solid 2px;
+    border-radius: 10px;
+    padding: 20px;
+    @extend %hover;
+}
+
+@media screen and (max-width: 768px){
+    body{
+        margin: 0;
+        background-color: #ABCFF0;
+        font-family: 'Hs-desarrollo', sans-serif;
+        
+    }
+
+
+    
+
+    .navbar{
+        list-style: none;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-left: 0;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #D5E7F7;
+        transition: transform 0.3s;
+        transform: translateY(-100%);
+
+
+    }
+    li{
+        padding: 1em;
+
+
+    }
+    img{
+        max-width: 100%;
+    }
+    .toggle-menu{
+        display: block;
+        width: 40px;
+        position: absolute;
+        top: 0.5rem;
+        right: 0;
+        cursor: pointer;
+        z-index: 1;
+        
+    }
+    .toggle-menu__checkbox:checked + .navbar{
+        transform: translateY(0);
+
+    }
+    .toggle-menu__checkbox{
+        display: none;
+    }
+}

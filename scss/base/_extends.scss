@@ -1,0 +1,8 @@
+%hover {
+    transition: transform 0.3s ease;
+    grid-row-start: cuerpo;
+    &:hover {
+        transform: scale(1.1);
+        border: 2px solid rgb(8, 67, 156);
+    }
+}

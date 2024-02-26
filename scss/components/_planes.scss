@@ -1,0 +1,38 @@
+
+.cont-planes {
+	background-color:map-get($color, bg-uno );
+	width: 60%;
+	max-width: 1000px;
+	margin: 20px auto;
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: repeat(3,1fr);
+	grid-template-rows: repeat(3, auto);
+	>div {
+		padding: 20px;
+		border: 2px;
+		border-color:map-get($color,borde);
+	}
+	.img {
+		padding: 20px;
+		border: 2px;
+		border-color:map-get($color, borde);
+	}
+    @media screen and (max-width: 768px){
+        .cont-planes{
+            width: 100%;
+        }
+        
+        .img{
+                display: none;
+
+            }
+        }
+	.text-plan {
+		padding: 20px;
+		border: 2px;
+		border-color:map-get($color,borde);
+		grid-column-start: 1;
+		grid-column: span 2;
+	}
+}
