@@ -150,6 +150,7 @@ li {
 .menu-home p {
   background-color: rgba(111, 98, 245, 0.5);
   margin: 0px 2px 4px 2px;
+  padding-bottom: 20px;
 }
 
 .text-ejemplo {
