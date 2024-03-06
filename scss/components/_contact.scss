@@ -8,15 +8,30 @@
 .text-contact {
 	margin-bottom: 20px;
 }
-.cont-img {
-	width: 100%;
-}
-.img-contact {
-	img {
-		width: 100%;
-		height: auto;
-	}
-}
+form {
+    background-color:transparent;
+	margin: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type="submit"] {
+    background-color: #6F62F5;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+  }
+  input[type="submit"]:hover {
+    background-color: #554ba7;
+  }
 .contactos {
 	color: #fff;
 	background-color: #6F62F5;

@@ -133,12 +133,23 @@ li {
     display: none;
   }
 }
-.img-home {
-  width: 96%;
-  height: 400px;
-  margin-left: 2%;
-  margin-right: 2%;
-  margin-top: 1%;
+.menu-home {
+  margin: 2%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+}
+.menu-home a, .menu-home p {
+  display: flex;
+  justify-content: center;
+}
+.menu-home a {
+  background-color: #6F62F5;
+  margin: 0px 2px 0px 2px;
+}
+.menu-home p {
+  background-color: rgba(111, 98, 245, 0.5);
+  margin: 0px 2px 4px 2px;
 }
 
 .text-ejemplo {
@@ -269,13 +280,32 @@ h1 {
   margin-bottom: 20px;
 }
 
-.cont-img {
-  width: 100%;
+form {
+  background-color: transparent;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.img-contact img {
+input, textarea {
   width: 100%;
-  height: auto;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  background-color: #6F62F5;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #554ba7;
 }
 
 .contactos {

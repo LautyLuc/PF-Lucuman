@@ -1,12 +1,25 @@
 //config home
 @import '../base/variables';
-.img-home{
-    width: 96%;
-    height: 400px;
-    margin-left: 2%;
-    margin-right: 2%;
-    margin-top: 1%;
-}
+
+.menu-home{
+   margin: 2%;
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   grid-template-rows: repeat(2,auto);
+   
+    a,p{
+        display:flex ;
+        justify-content: center;
+    }
+    a{
+        background-color:#6F62F5;
+        margin: 0px 2px 0px 2px;
+    }
+    p{
+        background-color: rgba(111, 98, 245, 0.5);
+        margin: 0px 2px 4px 2px;
+    }
+    }
 .text-ejemplo{
 
     line-height: 30px;
